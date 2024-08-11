@@ -68,13 +68,12 @@
 
 .list .logoDashboard p {
   color: var(--Color-Gray-2, #C1BBEB);
-  
+
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   white-space: nowrap
-
 }
 
 .list .logoDashboard:hover p {
@@ -481,11 +480,13 @@
 }
 
 .rightBar .profile {
+  position: relative;
   padding: 32px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow: hidden;
 }
 
 .rightBar .profile p {
@@ -519,6 +520,7 @@
   background-color: #ffffff;
   box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
   margin-bottom: 0px;
+  z-index: 1;
 
 }
 
@@ -527,12 +529,38 @@
 
 }
 
+.cylinderYellow {
+  position: absolute;
+  display: flex;
+  justify-content:flex-end;
+  right: 0px;
+  bottom: -150px;
+  width: 100px;
+  height: 294px;
+  flex-shrink: 0;
+  border-radius: 1000px;
+  background: var(--Color-Yellow, #FCC43E);
+  z-index: 0;
+}
+
+.cylinderOrange {
+  position: absolute;
+  display: flex;
+  right: 50px;
+  bottom: -170px;
+  width: 100px;
+  height: 294px;
+  flex-shrink: 0;
+  border-radius: 1000px;
+  background: var(--Color-Orange, #FB7D5B);
+  z-index: 0;
+}
+
 .rightBar .infoZone1 {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 32px;
-  
 }
 
 .rightBar .infoZone1 h1 {
@@ -554,18 +582,23 @@
   line-height: normal;
 }
 
-.rightBar .infoZone1 #dots{
- right: 0px;
+.rightBar .infoZone1 #dots {
+  right: 0px;
 }
+
 .rightBar .contactDetails {
   z-index: 1;
 }
+
 .line {
   top: 90px;
   left: 27px;
-  width: 4px; /* Adjust the thickness of the line as needed */
-  background-color: #c3bde6; /* Adjust the color as needed */
-  height: 220px; /* Adjust the height as needed to connect the circles */
+  width: 4px;
+  /* Adjust the thickness of the line as needed */
+  background-color: #c3bde6;
+  /* Adjust the color as needed */
+  height: 220px;
+  /* Adjust the height as needed to connect the circles */
   position: absolute;
   z-index: 0;
 }
