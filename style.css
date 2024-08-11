@@ -68,11 +68,12 @@
 
 .list .logoDashboard p {
   color: var(--Color-Gray-2, #C1BBEB);
-
+  
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  white-space: nowrap
 
 }
 
